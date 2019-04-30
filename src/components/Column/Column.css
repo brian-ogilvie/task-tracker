@@ -6,6 +6,11 @@
   border-radius: 5px;
 }
 
+.Column--transparent {
+  background-color: transparent;
+  color: rgba(255, 255, 255, .8);
+}
+
 .Column__taskList {
   padding: 0 5px;
 }

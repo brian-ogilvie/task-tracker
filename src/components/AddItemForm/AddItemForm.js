@@ -27,20 +27,20 @@ class AddItemForm extends React.Component {
   }
 
   render() {
-    const {onClose} = this.props
+    const {onClose, itemType} = this.props
     return (
       <form className="AddItemForm" onSubmit={this.onFormSubmit}>
         <div className="AddItemForm__input-holder">
           <textarea 
             className="AddItemForm__input" 
-            placeholder="Enter a title for this card..." 
+            placeholder={`Enter a title for this ${itemType}...`}
             value={this.state.newCard} 
             onChange={this.handleChange}
             autoFocus={true}
           />
         </div>
         <div className="AddItemForm__buttons">
-          <button type="submit" className="AddItemForm__submit">Add Card</button>
+          <button type="submit" className="AddItemForm__submit">Add {itemType}</button>
           <button type="reset" className="AddItemForm__close" onClick={onClose}><i className="fas fa-times"></i></button>
         </div>
       </form>

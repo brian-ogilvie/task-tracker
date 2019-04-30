@@ -9,8 +9,17 @@
   animation: fade-in .3s linear;
 }
 
+.AddTaskButton--list {
+  border-radius: 5px;
+  background-color: rgba(50, 50, 50, .5);
+}
+
 .AddTaskButton:hover {
   background-color: darkgray;
+}
+
+.AddTaskButton--list:hover {
+  background-color: rgba(50, 50, 50, .8);
 }
 
 .AddTaskButton__text {

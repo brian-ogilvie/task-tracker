@@ -35,6 +35,7 @@
   color: white;
   font-size: .9rem;
   font-weight: bold;
+  text-transform: capitalize;
   border-radius: 3px;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);

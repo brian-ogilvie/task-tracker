@@ -43,7 +43,6 @@ class Board extends React.PureComponent {
   }
 
   handleAddTaskClick = (title, newTask) => {
-    // const newTask = window.prompt('Enter new task')
     if (!newTask) {return;}
     this.setState(prevState => {
       const requestedColumnIndex = prevState.columns.findIndex(column => {
@@ -70,6 +69,7 @@ class Board extends React.PureComponent {
     return (
       <div className="Board">
         {allColumns}
+        <Column onAddItem={this.handleAddColumn} />
       </div>
     )
   }

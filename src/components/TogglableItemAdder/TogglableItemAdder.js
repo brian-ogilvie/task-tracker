@@ -26,15 +26,20 @@ class TogglableItemAdder extends React.Component {
   }
 
   render() {
+    const {itemType} = this.props
     return (
       <div className="TogglableItemAdder">
         {this.state.adding ? 
-          <AddItemForm onAddItem={this.handleAddItem} onClose={this.hideForm} /> :
-          <AddTaskButton onClick={this.showForm} />
+          <AddItemForm onAddItem={this.handleAddItem} onClose={this.hideForm} itemType={itemType} /> :
+          <AddTaskButton onClick={this.showForm} itemType={itemType} />
         }
       </div>
     )
   }
+}
+
+TogglableItemAdder.defaultProps = {
+  itemType: 'card'
 }
 
 export default TogglableItemAdder
