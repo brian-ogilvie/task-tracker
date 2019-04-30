@@ -1,0 +1,36 @@
+.AddTaskButton {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color .2s;
+  border-radius: 0 0 5px 5px;
+  animation: fade-in .3s linear;
+}
+
+.AddTaskButton:hover {
+  background-color: darkgray;
+}
+
+.AddTaskButton__text {
+  line-height: 1em;
+  margin: 10px 5px 0;
+}
+
+.AddTaskButton:hover .AddTaskButton__text {
+  text-decoration: underline;
+}
+
+.AddTaskButton__plus {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 0 5px;
+  opacity: .7;
+  transition: opacity .2s linear;
+}
+
+.AddTaskButton:hover .AddTaskButton__plus {
+  opacity: 1;
+}

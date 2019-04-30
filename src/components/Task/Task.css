@@ -1,0 +1,16 @@
+.Task {
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin: 5px auto;
+  padding: 14px 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  transition: box-shadow .2s linear;
+  border-radius: 5px;
+  transform-origin: 0 0;
+  animation: fade-in 1s linear;
+}
+
+.Task:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
