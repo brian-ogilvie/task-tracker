@@ -1,6 +1,6 @@
 # Task Tracker
 
-A coding challenge: Implement a Kanban-style task manager, in the style of Trello or Gira.
+A coding challenge: Implement a Kanban-style task manager, in the style of Trello or Jira.
 
 ## View Live
 
