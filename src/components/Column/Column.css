@@ -1,6 +1,6 @@
 .Column {
-  margin: 0 12.5px;
-  width: 250px;
+  margin: 0 5px;
+  width: 270px;
   flex-shrink: 0;
   background-color: #ECEEEE;
   box-shadow: 0 0 40px rgba(0, 0, 0, .3);
@@ -24,6 +24,7 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+  font-family: 'Gugi', cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, .5);
   height: 30px;
   border-radius: 5px 5px 0 0;
