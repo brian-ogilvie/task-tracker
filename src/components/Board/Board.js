@@ -9,7 +9,7 @@ class Board extends React.PureComponent {
     this.state = {
       columns: [
         {
-          title: 'Winnie',
+          title: 'Backlog',
           tasks: [
             'Task 1',
             'Task 2',
@@ -17,21 +17,21 @@ class Board extends React.PureComponent {
           bgColor: '#8E6395'
         },
         {
-          title: 'Bob',
+          title: 'In Progress',
           tasks: [
             'Task 1',
             'Task 2',
           ],
           bgColor: '#39A59C'
         },{
-          title: 'Thomas',
+          title: 'In Review',
           tasks: [
             'Task 1',
             'Task 2',
           ],
           bgColor: '#344759'
         },{
-          title: 'George',
+          title: 'Done',
           tasks: [
             'Task 1',
             'Task 2',

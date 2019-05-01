@@ -18,12 +18,26 @@ class AddItemForm extends React.Component {
 
   addItem = () => {
     const {newItem} = this.state
+    if (!newItem) {return}
     this.props.onAddItem(newItem)
   }
 
   onFormSubmit = e => {
     e.preventDefault()
     this.addItem()
+  }
+
+  onKeyDown = (e) => {
+    if (e.key !== 'Enter') {return}
+    this.addItem()
+  }
+
+  componentDidMount() {
+    window.addEventListener('keydown', this.onKeyDown)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.onKeyDown)
   }
 
   render() {

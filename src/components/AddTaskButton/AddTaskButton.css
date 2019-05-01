@@ -12,6 +12,11 @@
 .AddTaskButton--list {
   border-radius: 5px;
   background-color: rgba(50, 50, 50, .5);
+  padding: 0 5px 5px;
+}
+
+.AddTaskButton--list .AddTaskButton__plus {
+  line-height: .8em;
 }
 
 .AddTaskButton:hover {
