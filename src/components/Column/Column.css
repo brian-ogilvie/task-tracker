@@ -1,6 +1,7 @@
 .Column {
   margin: 0 12.5px;
-  flex-basis: 100%;
+  width: 270px;
+  flex-shrink: 0;
   background-color: #ECEEEE;
   box-shadow: 0 0 40px rgba(0, 0, 0, .3);
   border-radius: 5px;
@@ -13,6 +14,8 @@
 
 .Column__taskList {
   padding: 0 5px;
+  max-height: 80vh;
+  overflow: scroll;
 }
 
 .Column__title {

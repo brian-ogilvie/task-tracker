@@ -62,6 +62,32 @@ class Board extends React.PureComponent {
     })
   }
 
+  getRandHex = () => {
+    const hexChars = '0123456789ABCDEF'
+    let hex = '#'
+    for (let i = 0; i < 6; i++) {
+      const randIdx = Math.floor(Math.random() * hexChars.length)
+      hex += hexChars[randIdx]
+    }
+    return hex
+  }
+
+  handleAddColumn = newTitle => {
+    const bgColor = this.getRandHex()
+    const newColumn = {
+      title: newTitle,
+      tasks: [],
+      bgColor: bgColor
+    }
+    this.setState(prevState => {
+      const columns = [
+        ...prevState.columns,
+        newColumn
+      ]
+      return {columns}
+    })
+  }
+
   render() {
     const allColumns = this.state.columns.map((column, i) => {
       return <Column column={column} onAddItem={this.handleAddTaskClick} key={i} />

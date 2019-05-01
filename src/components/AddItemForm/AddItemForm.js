@@ -5,20 +5,20 @@ class AddItemForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      newCard: ''
+      newItem: ''
     }
   }
 
   handleChange = e => {
     const {value} = e.target
     this.setState({
-      newCard: value
+      newItem: value
     })
   }
 
   addItem = () => {
-    const {newCard} = this.state
-    this.props.onAddItem(newCard)
+    const {newItem} = this.state
+    this.props.onAddItem(newItem)
   }
 
   onFormSubmit = e => {
@@ -34,7 +34,7 @@ class AddItemForm extends React.Component {
           <textarea 
             className="AddItemForm__input" 
             placeholder={`Enter a title for this ${itemType}...`}
-            value={this.state.newCard} 
+            value={this.state.newItem} 
             onChange={this.handleChange}
             autoFocus={true}
           />
