@@ -3,6 +3,7 @@ import './Column.css'
 
 import Task from '../Task/Task'
 import TogglableItemAdder from '../TogglableItemAdder/TogglableItemAdder'
+import EditButton from '../EditButton/EditButton'
 
 const Column = ({column, onAddItem}) => {
   if (column) {
@@ -19,6 +20,7 @@ const Column = ({column, onAddItem}) => {
       <div className="Column">
         <div className="Column__title" style={{backgroundColor: bgColor}}>
           {title}
+          <EditButton />
         </div>
         <div className="Column__taskList">
           {allTasks}

@@ -1,0 +1,10 @@
+.EditButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  animation: fade-in .3s linear;
+  cursor: pointer;
+  background-color: rgba(50, 50, 50, .3);
+  border-radius: 2px;
+  padding: 0 0 2px 3px;
+}

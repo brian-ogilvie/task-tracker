@@ -9,8 +9,17 @@
   border-radius: 5px;
   transform-origin: 0 0;
   animation: fade-in 1s linear;
+  position: relative;
+}
+
+.Task .EditButton {
+  display: none;
 }
 
 .Task:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.Task:hover .EditButton {
+  display: block;
 }

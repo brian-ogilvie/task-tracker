@@ -1,12 +1,13 @@
 import React from 'react'
 import './Task.css'
 
-// import ChangeColumnButton from '../ChangeColumnButton/ChangeColumnButton'
+import EditButton from '../EditButton/EditButton'
 
 const Task = ({task}) => {
   return (
     <div className="Task">
       {task}
+      <EditButton />
     </div>
   )
 }

@@ -28,4 +28,13 @@
   text-shadow: 0 0 4px rgba(0, 0, 0, .5);
   height: 30px;
   border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.Column__title .EditButton {
+  display: none;
+}
+
+.Column__title:hover .EditButton {
+  display: block;
 }
